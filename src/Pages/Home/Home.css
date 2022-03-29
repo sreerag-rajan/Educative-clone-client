@@ -1,0 +1,28 @@
+.home{
+    text-align: center;
+}
+
+.iconsSvgDiv{
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.reviews{
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: auto;
+}
+.reviews>div{
+    width: 50%;
+    border: 1px solid black;
+    padding: 40px;
+    
+}
