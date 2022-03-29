@@ -10,7 +10,7 @@ import {store} from "./Redux/store"
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    <ReduxProvider store={store}>
+    <ReduxProvider store={ store }>
     <App />
     </ReduxProvider>
     </BrowserRouter>

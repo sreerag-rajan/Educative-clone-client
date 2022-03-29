@@ -1,8 +1,8 @@
-import {combineReducers, compose, createStore} from "redux"
+import {applyMiddleware, combineReducers, compose, createStore} from "redux"
 import { authReducer } from "./Auth/auth.reducer"
 
 const rootReducer = combineReducers({
-    auth:authReducer
+    auth:authReducer,
 })
 
 const loggerMiddleware = (store)=>(next)=>(action)=>{
@@ -12,4 +12,4 @@ const loggerMiddleware = (store)=>(next)=>(action)=>{
     next(action);
 }
 
-export const store = createStore(rootReducer,compose(loggerMiddleware, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()))
+export const store = createStore(rootReducer,compose(applyMiddleware(loggerMiddleware), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()))
