@@ -50,7 +50,7 @@ export const Footer = () => {
                    <p>Business Terms of<br/> Service</p> 
                   <p class="head">ABOUT US</p> 
                    <p>Our Team</p> 
-                   <p>Career <Button variant="contained" size="small">Hiring</Button></p>
+                   <p>Career <Button style={{cursor: "none"}} variant="contained" size="small">Hiring</Button></p>
                 </div>
                 <div class="fifth">
                 <p class="head">More</p> 
