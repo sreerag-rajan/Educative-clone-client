@@ -87,14 +87,19 @@ export const LowerBox = styled.div`
         }
 
         .copyright{
-            margin-left: 31em;
-            width: 40%;
+            margin-left: 35em;
+            width: 35%;
             color: #8da9b3;
             display: flex;
+            font-size: 13px;
         }
         
         .copyright p{
-            margin-top: 1.5em;
+            margin-top: 1.8em;
+            margin-left: 1.7em;
         }
 
+        img{
+            margin-top: 0.7em;
+        }
 `

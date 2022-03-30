@@ -79,8 +79,8 @@ export const Footer = () => {
                 </div>
                 <div class="copyright">
                     <p>Copyright ©2022 Educative, Inc. All rights reserved.</p>
-                    &nbsp;&nbsp;&nbsp;
-                    <img src="https://www.educative.io/static/imgs/soc2.svg" alt="" height="50px" width="50px"/>
+                    &nbsp;
+                    <img src="https://www.educative.io/static/imgs/soc2.svg" alt="" height="40px" width="40px"/>
                 </div>
             </LowerBox>
         </MidDiv>
