@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material/styles";
+import Nunito_sans from "@fontsource/nunito-sans"
 
 
 export const theme = createTheme({
@@ -11,4 +12,7 @@ export const theme = createTheme({
           main: '#F7F8FD',
         },
       },
+    typography:{
+      fontFamily:["nunito-sans", "sans-sarif"].join(",")
+    }
 })
