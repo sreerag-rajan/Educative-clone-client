@@ -1,0 +1,41 @@
+
+
+.freeCourseContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    width: 70%;
+    margin: auto;
+    height: fit-content;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+}
+.freeCourseCard{
+    text-align: left;
+}
+
+.courseImage{
+    width: 100%;
+}
+.instructorAvatar{
+    border-radius: 50%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.exploreMore{
+    margin-top: 40px;
+}
+.popularCourseTab{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    grid-gap: 5%;
+    border: 1px solid black;
+    padding: 20px;
+}
