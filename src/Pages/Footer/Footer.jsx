@@ -12,25 +12,25 @@ export const Footer = () => {
             <p>Learn in-demand tech skills in half the time</p>
             </UpperBox>
             <MidBox>
-                <div class="first">
-                   <p class="head">SOLUTIONS</p> 
+                <div className="first">
+                   <p className="head">SOLUTIONS</p> 
                    <p>Educative for <br/> Business</p> 
                    <p>Educative for <br/> Individuals</p> 
                    <p>Educative for HR/<br/> recruiting</p> 
                    <p>Educative for <br/> Bootcamps</p> 
                 </div>
-                <div class="second">
-                   <p class="head">PRODUCTS</p> 
+                <div className="second">
+                   <p className="head">PRODUCTS</p> 
                    <p>Educative Learning</p> 
                    <p>Educative <br/> Onboarding</p> 
                    <p>Educative Skills<br/> Assessments</p> 
                   <br/>
-                  <p class="head">PRICING</p> 
+                  <p className="head">PRICING</p> 
                    <p>For Individuals</p> 
                    <p>For Teams</p>
                 </div>
-                <div class="third">
-                <p class="head">RESOURCES</p> 
+                <div className="third">
+                <p className="head">RESOURCES</p> 
                    <p>Educative Blog</p> 
                    <p>Edpresso</p> 
                    <br/>
@@ -38,22 +38,22 @@ export const Footer = () => {
                    <br/>
                    <br/>
                    <br/>
-                  <p class="head">CONTRIBUTE</p> 
+                  <p className="head">CONTRIBUTE</p> 
                    <p>Become an Author</p> 
                    <p>Become an Affiliate</p>
                    <p>Become a <br/> Contributor</p>
                 </div>
-                <div class="fourth">
-                <p class="head">LEGAL</p> 
+                <div className="fourth">
+                <p className="head">LEGAL</p> 
                    <p>Privacy Policy</p> 
                    <p>Terms of Service</p> 
                    <p>Business Terms of<br/> Service</p> 
-                  <p class="head">ABOUT US</p> 
+                  <p className="head">ABOUT US</p> 
                    <p>Our Team</p> 
                    <p>Career <Button style={{cursor: "none"}} variant="contained" size="small">Hiring</Button></p>
                 </div>
-                <div class="fifth">
-                <p class="head">More</p> 
+                <div className="fifth">
+                <p className="head">More</p> 
                    <p>Course Catalog</p> 
                    <p>Early Access<br/> Courses</p> 
                    <p>Free trials</p> 
@@ -77,7 +77,7 @@ export const Footer = () => {
                     <a href="//www.youtube.com/channel/UCT_8FqzTIr2Q1BOtvX_DPPw/?sub_confirmation=1" target="_blank" id="youtube" rel="noopener noreferrer" aria-label="YouTube" class="mb-4 text-gray-50 fill-current hover:text-primary focus:text-primary dark:hover:text-primary-light dark:focus:text-primary-light hover:cursor-pointer focus:cursor-pointer"><span class="mr-1 flex justify-center h-12 w-12"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></span></a>
                     </div>
                 </div>
-                <div class="copyright">
+                <div className="copyright">
                     <p>Copyright ©2022 Educative, Inc. All rights reserved.</p>
                     &nbsp;
                     <img src="https://www.educative.io/static/imgs/soc2.svg" alt="" height="40px" width="40px"/>
