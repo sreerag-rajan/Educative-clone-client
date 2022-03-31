@@ -37,7 +37,11 @@ export const DevelopmentsTeam = () => {
               <img style={{marginTop: "1em", marginLeft: "5em"}} src="https://i.ibb.co/k5SgdDV/left.jpg" alt="" />
           </div>
           <div class="right">
-              <img style={{marginTop: "1em", marginLeft: "0"}} src="https://i.ibb.co/rfV2Fp3/right.jpg" alt="" />
+              <div class="container">
+                  <div id="head"></div>
+                  <div id="sub-head"></div>
+                  <div id="points"></div>
+              </div>
           </div>
       </div>
       </SecondBox>

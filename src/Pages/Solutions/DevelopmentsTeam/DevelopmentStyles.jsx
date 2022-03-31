@@ -26,5 +26,13 @@ export const SecondBox = styled.div`
     .box .right{
         height: 500px;
         width: 55%;
+        border: 1px solid black;
     }
+    .right .container{
+        height: 500px;
+        width: 90%;
+        border: 1px solid teal;
+    }
+
+    
 `
