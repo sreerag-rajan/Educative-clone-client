@@ -11,7 +11,7 @@ import { BsStars} from 'react-icons/bs';
 import { ImFlag} from 'react-icons/im';
 import DeveloperBoardOffIcon from '@mui/icons-material/DeveloperBoardOff';
 import { BrowseAll } from "./components of explore/browseAll";
-import { OurPicks } from "./components of explore/ourPicks";
+// import { OurPicks } from "./components of explore/ourPicks";
 import { useState, useEffect } from "react";
 
 
