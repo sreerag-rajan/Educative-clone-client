@@ -13,6 +13,6 @@ export const theme = createTheme({
         },
       },
     typography:{
-      fontFamily:["nunito-sans", "sans-sarif"].join(",")
+      fontFamily:[Nunito_sans, "sans-sarif"].join(",")
     }
 })
