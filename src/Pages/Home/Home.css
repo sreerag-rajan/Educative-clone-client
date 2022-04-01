@@ -20,7 +20,8 @@
 }
 
 .reviews{
-    overflow-x: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
     display: flex;
     flex-wrap: nowrap;
     width: 80%;
@@ -40,7 +41,7 @@
     margin:10px;
     margin-left: 10%;
     width: 400px;
-    height:300px;
+    height:400px;
     text-align: left;
     display: flex;
     flex-direction: column;   
