@@ -2,6 +2,7 @@ import {Box, Tabs, Tab, Typography, dialogClasses, Button} from "@mui/material"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import PropTypes from 'prop-types';
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const PopularCourses = (courses)=>{
     //Setting States
@@ -9,6 +10,7 @@ export const PopularCourses = (courses)=>{
     const [javascriptCourses, setJavascriptCourses] = useState([])
     const [pythonCourses, setPythonCourses] = useState([]);
     const [tab, setTab] = useState(0);
+    const navigate = useNavigate()
     
     //UseEffect to filter and get interview Courses
     useEffect(()=>{
@@ -39,6 +41,12 @@ export const PopularCourses = (courses)=>{
     const handleTabChange=(event,value)=>{
         setTab(value);
     }
+    const handleNavigate = (course)=>{
+      let x = course.courseName.split(" ").join("-");
+      localStorage.setItem("educativeCourse", JSON.stringify(course))
+      navigate(`/course/${x}`);
+    }
+
     return(
         <div className="popularCourses">
             <Box sx={{ width: '80%', margin:"auto", marginTop:"40px" }}>
@@ -63,7 +71,7 @@ export const PopularCourses = (courses)=>{
                     </div>
                     <div className="flex">
                         <div>{el.level}</div>
-                        <div><Button vairant="outlined">Preview <ArrowForwardIcon/> </Button></div>
+                        <div><Button onClick={()=>{handleNavigate(el)}} vairant="outlined">Preview <ArrowForwardIcon/> </Button></div>
                     </div>
                     </div>
             }

@@ -2,6 +2,7 @@ import "../HomeWithUser.css"
 import { Button, Paper, Box } from "@mui/material";
 import { useEffect, useState } from "react"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -10,6 +11,7 @@ export const FreeCourses = (courses)=>{
     const[coursesToShow, setCoursesToShow] = useState([]);
     const [page, setPage]= useState(1);
     const [sectionHeight, setSectionHeight] = useState(800);
+    const navigate = useNavigate()
 
     //Use Effect to get all the free courses from courses
     useEffect(()=>{
@@ -29,7 +31,6 @@ export const FreeCourses = (courses)=>{
         let index_limit = page*6;
         let x = freeCourses.filter((el,i)=>{
             if(i<index_limit){
-                console.log(index_limit, i)
                 return el;
             }
         })
@@ -39,6 +40,13 @@ export const FreeCourses = (courses)=>{
     useEffect(()=>{
         setSectionHeight(page*900);
     },[page])
+
+    const handleNavigate = (course)=>{
+        let x = course.courseName.split(" ").join("-");
+        localStorage.setItem("educativeCourse", JSON.stringify(course))
+        navigate(`/course/${x}`);
+
+    }
     
 
     return(
@@ -55,7 +63,7 @@ export const FreeCourses = (courses)=>{
                     </div>
                     <div className="flex">
                         <div>{el.level}</div>
-                        <div><Button vairant="outlined">Preview <ArrowForwardIcon/> </Button></div>
+                        <div><Button onClick={()=>{handleNavigate(el)}} vairant="outlined">Preview <ArrowForwardIcon/> </Button></div>
                     </div>
                     </Paper>
                 

@@ -6,6 +6,8 @@ import { HomeWithUser } from "../Pages/HomeWithUser/HomeWithUser"
 import { LearningForTeams } from "../Pages/Products/LearningForTeams"
 import {DevelopmentsTeam} from "../Pages/Solutions/DevelopmentsTeam/DevelopmentsTeam"
 import {TeamPricing} from "../Pages/TeamPricing/Components/team"
+import { Course } from "../Pages/Course/Course"
+import { Checkout } from "../Pages/Checkout/Checkout"
 
 export const AllRoutes = ()=>{
     return(
@@ -18,6 +20,8 @@ export const AllRoutes = ()=>{
             <Route path="/learn" element={<HomeWithUser/>}/>
             <Route path="/upskill" element={<LearningForTeams/>}/>
             <Route path="/business" element={<DevelopmentsTeam/>}/>
+            <Route path="/course/:name" element={<Course/>}/>
+            <Route path = "/payment" element={<Checkout/>}/>
             <Route path = "*" element={"404 Page not Found"}/>
         </Routes>
     )
