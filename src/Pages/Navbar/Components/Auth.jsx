@@ -34,7 +34,7 @@ export const Auth = ()=>{
             <UserAvatar/>
         </div>:
         <div className="noUser">
-            <div>Login</div>
+            <Button sx={{color:"black", fontWeight:"bold"}}>Login</Button>
             <Button variant="contained">Join For Free</Button>            
         </div>}
         </>
