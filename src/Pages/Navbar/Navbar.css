@@ -18,6 +18,9 @@
     align-items: center;
     margin: 0 20px;
 }
+.logo:hover{
+    cursor: pointer;
+}
 .sections{
     display: flex;
     gap: 20px;
