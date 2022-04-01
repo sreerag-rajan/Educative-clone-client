@@ -58,9 +58,6 @@ export const DevelopmentsTeam = () => {
           <div className="right">
             <div className="container">
               <div id="head">
-                <h1 style={{ textAlign: "left" }}>
-                  Introducing Educative Onboarding
-                </h1>
               </div>
               <div id="sub-head">
                 <p
@@ -88,9 +85,6 @@ export const DevelopmentsTeam = () => {
           <div className="right">
             <div className="left-container">
               <div id="head">
-                <h1 style={{ textAlign: "left" }}>
-                  The Classic: Educative Learning
-                </h1>
               </div>
               <div id="sub-head">
                 <p
