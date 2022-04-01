@@ -1,0 +1,57 @@
+.checkout{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-gap: 5%;
+    width: 95%;
+    margin: auto;
+}
+
+.checkoutRight{
+    background-color: ghostwhite;
+}
+.priceComponent{
+    margin-top: 50px;
+}
+.priceComponent h4{
+    text-align: center;
+}
+.priceContainer{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 5%;
+}
+
+.eachPrice{
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.eachPriceSelected{
+    border: 3px solid purple;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.totalPrice{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 40px;
+    font-size: 1.5rem;
+}
+.paymentComponent{
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+}
+.paymentComponent form{
+    border: 1px solid rgb(186, 180, 180);
+    padding: 30px;
+    width: 350px;
+    margin: 10% -5%;
+}
+.paymentComponent form div{
+    margin-top: 10px;
+}
+.paymentComponent form>input{
+    width: 300px;
+}
