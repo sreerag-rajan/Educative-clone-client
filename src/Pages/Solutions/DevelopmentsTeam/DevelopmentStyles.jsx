@@ -54,60 +54,18 @@ export const ThirdBox = styled.div`
 `;
 
 export const ForthBox = styled.div`
-  height: 750px;
+  height: 950px;
   width: 100%;
   background-color: white;
 
   .box3 {
-    width: 80%;
-    height: 450px;
+    width: 90%;
+    height: 400px;
     margin: auto;
     /* border: 1px solid black; */
     
   }
 
-  .reviews {
-    overflow-x: hidden;
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    margin: auto;
-    margin-left: 1em;
-  }
-  .reviews > div {
-    /*<- this is the slideshow element*/
-    width: 100%;
-    margin: auto;
-    /* border: 1px solid black; */
-    padding: 40px;
-  }
-  .review {
-    /* background-color: aqua; */
-    padding: 20px;
-    /* border: 1px solid gray; */
-    margin: 10px;
-    margin-left: 10%;
-    width: 400px;
-    height: 450px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    background-color: white;
-    outline: none;
-    border: none;
-  }
-  .review p,
-  h3 {
-    padding: 5px 8px;
-    text-align: left;
-    font-size: 16px
-  }
-
-  .review > div:nth-child(2) {
-    position: fixed;
-    bottom: 10px;
-  }
 `;
 
 export const FifthBox = styled.div`
@@ -179,3 +137,33 @@ export const FifthBox = styled.div`
       width: 48%;
   }
 `;
+
+export const SixthBox = styled.div`
+  height: 500px;
+  width: 100%;
+  background-color: white;
+
+  .thumbnail1{
+        height: 300px;
+        width: 70%;
+        /* border: 1px solid black; */
+        margin: auto;
+        display: flex;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+        border-radius: 10px 10px 10px 10px;
+  }
+  .banner{
+      height: 300px;
+      width: 35%;
+      /* border: 1px solid tomato; */
+  }
+  .texting{
+      height: 300px;
+      width: 55%;
+  }
+`

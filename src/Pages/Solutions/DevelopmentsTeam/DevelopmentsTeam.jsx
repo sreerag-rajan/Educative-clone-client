@@ -1,89 +1,12 @@
 import React from "react";
 import { Typography, Button } from "@mui/material";
-import { Main, SecondBox, ThirdBox, ForthBox, FifthBox  } from "./DevelopmentStyles";
-import { Slide } from 'react-slideshow-image';
+import { Main, SecondBox, ThirdBox, ForthBox, FifthBox, SixthBox } from "./DevelopmentStyles";
 import 'react-slideshow-image/dist/styles.css'
-import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
-import {Paper} from "@mui/material"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import DownloadIcon from '@mui/icons-material/Download';
-
+import {Part4} from '../../Home/Components/Part4'
 
 export const DevelopmentsTeam = () => {
-  const reviews = [
-    {
-      review:
-        "You guys are the gold standard of crash-courses... Narrow enough that it doesn't need years of study or a full blown book to get the gist, but broad enough that an afternoon of Googling doesn't cut it.",
-      author: "Carlos Matias La Borde",
-      handle: "Software Developer",
-    },
-    {
-      review:
-        "Just finished my first full #ML course: Machine learning for Software Engineers from Educative, Inc. ... Highly recommend!",
-      author: "Evan Dunbar",
-      handle: "ML Engineer",
-    },
-    {
-      review:
-        "I spend my days and nights on Educative. It is indispensable. It is such a unique and reader-friendly site, resources available for learners on Educative is well organized and deep, it helps break down tricky programming concepts into simple chunks and exercises for practice to solidify the learning experience.",
-      author: "Souvik Kundu",
-      handle: "Front-end Developer",
-    },
-    {
-      review:
-        "I've tried probably 5-7 different sites and Educative is easily the best. It perfectly blends explanation with interactivity ... On other sites like Codecademy, I often feel like they're asking me to do such a specific task to build such a specific product that if I were to move on to building my own from scratch, I'd be lost. I don't feel like that at all with Educative. Bravo!”",
-      author: "Eric Downs",
-      handle: "Musician/Entrepeneur",
-    },
-    {
-      review:
-        "Thank you for finally making such a platform, where I can just read the useful information and execute the code for a challenge and get real hands-on experience without watching videos for hours.",
-      author: "Kenan Eyvazov",
-      handle: "DevOps Engineer",
-    },
-    {
-      review:
-        "I would like to express my immense gratitude for making your versatile educational platform available and accessible. I have been using educative.io since February and it will be fair to say that everything I know about software development/CS fundamentals (especially in context of technical interviews) is because of your platform.",
-      author: "Saad Aleem",
-      handle: "Software Engineer, Google",
-    },
-    {
-      review:
-        "These are high-quality courses. Trust me. I own around 10 and the price is worth it for the content quality. @EducativeInc came at the right time in my career. I'm understanding topics better than with any book or online video tutorial I've done. Truly made for developers. Thanks https://t.co/EeKruv5hxM",
-      author: "Anthony Walker",
-      handle: "@_webarchitect_",
-    },
-    {
-      review:
-        "I highly appreciate the professional work of the Educative team. Their goal is simple: make the perfect course for their students.",
-      author: "Rainer Grimm",
-      handle: "Software architect and Instructor",
-    },
-    {
-      review:
-        "A rich yet very easy to use platform, a wonderful team and a true opportunity to make a difference by sharing my skills - couldn't have asked for better!",
-      author: "Samia Khalid",
-      handle: "Senior AI Engineer at Microsoft",
-    },
-    {
-      review:
-        "Their platform has allowed me to help a broader audience of learners. I look forward to working with them again in the future!",
-      author: "Vincent Russo",
-      handle: "Security software developer running LucidProgramming",
-    },
-    {
-      review:
-        "Their platform has allowed me to help a broader audience of learners. I look forward to working with them again in the future!",
-      author: "Vincent Russo",
-      handle: "Security software developer running LucidProgramming",
-    },
-    {
-      review:
-        "An interactive and in-browser embedded coding environment, that's just perfect. I believe this to be a very effective medium for learning a skill such as coding.",
-      author: "Ohans Emannuel",
-      handle: "UI designer & Lead Front End Dev @kudi.ai",
-    }
-  ];
 
   return (
     <Main>
@@ -207,26 +130,7 @@ export const DevelopmentsTeam = () => {
         </h1>
         <br />
         <div className="box3">
-                {/* <button>&#60;</button> */}
-                <div className="reviews">
-                    <Slide cssClass="reviewSlideshow" autoplay={false}  slidesToShow={2}>
-                    {reviews.map((el,i)=>{
-                        return <Paper elevation={6}  className='review' key={i}>
-                            <div>
-                            <FormatQuoteIcon/>
-                            <p style={{padding: "5px 20px"}}>{el.review}</p>
-                            </div>                        
-                            <div>
-                                <h3>{el.author}</h3>
-                                <p>{el.handle}</p>
-                            </div> 
-                        </Paper>
-                    })}
-                    </Slide>
-                </div>
-
-                {/* <button>&#62;</button> */}
-
+                <Part4/>
             </div>
       </ForthBox>
       <FifthBox>
@@ -270,6 +174,20 @@ export const DevelopmentsTeam = () => {
             </div>
         </div>
       </FifthBox>
+      
+      <SixthBox>
+        <br /><br /><br /><br /><br />
+      <div className="thumbnail1">
+          <div className="banner">
+            <img src="https://i.ibb.co/KLvXmsy/capture2.jpg" alt="" height="300px" width="100%" />
+          </div>
+          <div className="texting">
+              <h2 style={{ textAlign: "left", marginLeft: "0.5em"}}>Ready for a demo?</h2>
+              <p style={{ textAlign: "left", marginLeft: "1em", fontSize: "18px"}}>See Educative in action to learn how the power of developer experiences can push your team faster and farther than ever before.</p>
+              <Button style={{marginLeft:"1em"}} variant="contained" size="large">Request Demo</Button>
+            </div>
+        </div>
+      </SixthBox>
     </Main>
   );
 };
