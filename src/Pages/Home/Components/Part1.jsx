@@ -1,14 +1,16 @@
 import computerimg from '../../../Assets/Home/homePagecomputerImg.png'
 import {Button} from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 export const Part1 = ()=>{
+    const navigate = useNavigate()
     return(
         <div>
             <h1>Learn something new. Everyday. </h1>
             <p>Educative helps software engineers and their teams increase productivity and reach their potential</p>
             
-            <Button variant="contained" sx={{margin:"20px"}}>I'm an individual</Button>
-            <Button variant="contained" sx={{margin:"20px"}} >I'm a business</Button>
+            <Button onClick={()=>{navigate("/individual-learner")}} variant="contained" sx={{margin:"20px"}}>I'm an individual</Button>
+            <Button onClick={()=>{navigate("/business")}} variant="contained" sx={{margin:"20px"}} >I'm a business</Button>
             
             <br />
             <img className='computerimg' src={computerimg} alt="" />

@@ -15,10 +15,10 @@ export const HomeWithUser = ()=>{
         })
     },[])
     return(
-        <div>
+        <div className="homeWithUser">
             <Welcome/>
-            <FreeCourses courses={courses}/>
-            <PopularCourses courses={courses}/>
+            {courses.length>0?<FreeCourses courses={courses}/>:""}
+            {courses.length>0?<PopularCourses courses={courses}/>:""}
             <ExploreMore/>
         </div>
     )

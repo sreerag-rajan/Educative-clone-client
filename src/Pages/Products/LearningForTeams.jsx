@@ -1,9 +1,10 @@
 import Button from '@mui/material/Button';
 import image1 from "../../Assets/Products/teamImage1.png";
-import "./LearningForTeams.css";
-import Card1 from "./LearnForTeams components/Card1"
-import Card2 from "./LearnForTeams components/Card2"
-import Card3 from "./LearnForTeams components/Card3"
+import "./LearningForTeams components/LearningForTeams.css";
+import Card1 from "./LearningForTeams components/Card1"
+import Card2 from "./LearningForTeams components/Card2"
+import Card3 from "./LearningForTeams components/Card3"
+
 import image2 from "../../Assets/Products/image2.PNG";
 import image3 from "../../Assets/Products/image3.PNG";
 import image4 from "../../Assets/Products/image4.PNG";
