@@ -1,4 +1,9 @@
-
+.welcome{
+    text-align: center;
+}
+.freeCourses{
+    margin: 20px;
+}
 .freeCourseContainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -19,6 +24,10 @@
 .instructorAvatar{
     border-radius: 50%;
 }
+.showMoreDiv{
+    display: flex;
+    justify-content: center;
+}
 
 .flex{
     display: flex;
@@ -26,15 +35,28 @@
 }
 
 .exploreMore{
-    margin-top: 40px;
+    margin: 40px;
+    text-align: center;
+}
+.popularCourses{
+    background-color: #F7F8FD;
+    padding: 30px;
 }
 .popularCourseTab{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
+    height: 900px;
     margin: auto;
     margin-top: 20px;
     grid-gap: 5%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 20px;
+    
+}
+.popularCourseCard{
+    border: 1px solid black;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: white;
 }

@@ -42,7 +42,7 @@ export const FreeCourses = (courses)=>{
     
 
     return(
-        <div >
+        <div className="freeCourses" >
             <div style={{height:`${sectionHeight}px`}} className="freeCourseContainer">
             {coursesToShow.map((el)=>{
                 return <Paper sx={{padding: "10px"}} className={"freeCourseCard"} key={el.id} variant="outlined">
@@ -61,13 +61,13 @@ export const FreeCourses = (courses)=>{
                 
             })}
             </div>
-            <Box sx={{marginTop:"20px"}}>
+            <div className="showMoreDiv">
             {coursesToShow.length<freeCourses.length?<Button sx={{border: "1px solid gray"}} onClick={()=>{
                 setPage(page+1)
             }}>Show More</Button>:<Button sx={{border: "1px solid gray"}} onClick={()=>{
                 setPage(1)
             }}>COllapse</Button>}
-            </Box>
+            </div>
         </div>
     )
 }

@@ -14,5 +14,8 @@ export const theme = createTheme({
       },
     typography:{
       fontFamily:[Nunito_sans, "sans-sarif"].join(",")
+    },
+    Button:{
+      position:"static"
     }
 })
