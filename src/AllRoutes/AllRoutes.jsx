@@ -1,5 +1,6 @@
 import {  Route, Routes } from "react-router-dom"
 
+import { LearningForIndividuals } from "../Pages/Products/LearningForIndividuals"
 import { Home } from "../Pages/Home/Home"
 import { HomeWithUser } from "../Pages/HomeWithUser/HomeWithUser"
 import { LearningForTeams } from "../Pages/Products/LearningForTeams"
@@ -11,6 +12,8 @@ export const AllRoutes = ()=>{
         <Routes>
 
             <Route path="/" element={<Home/>}/>
+
+            <Route path="/explore" element={<LearningForIndividuals/>}/>
             <Route path="/business-pricing" element={<TeamPricing/>}/>
             <Route path="/learn" element={<HomeWithUser/>}/>
             <Route path="/upskill" element={<LearningForTeams/>}/>

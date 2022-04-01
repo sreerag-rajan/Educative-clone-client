@@ -1,0 +1,24 @@
+.upperdiv{
+    width: 70%;
+    margin: auto;
+    margin-bottom:20px;
+}
+.mainheading{
+    text-align:left;
+    font-size:45px;
+    font-weight:450;
+}
+.searchbar{
+    display: flex;
+}
+.searchbar>:nth-child(1){
+    width: 90%;
+}
+.searchbar>:nth-child(2)>button{
+    width: 100%;
+    height: 100%;
+    font-size:18px
+}
+.searchbar>:nth-child(2)>i{
+    font-size:18px
+}
