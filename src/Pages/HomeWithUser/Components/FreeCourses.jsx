@@ -7,9 +7,9 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export const FreeCourses = (courses)=>{
     const [freeCourses, setFreeCourses] = useState([]);
-    const[coursesToShow, setCoursesToShow] = useState([])
-    const [page, setPage]= useState(1)
-    const [sectionHeight, setSectionHeight] = useState(800)
+    const[coursesToShow, setCoursesToShow] = useState([]);
+    const [page, setPage]= useState(1);
+    const [sectionHeight, setSectionHeight] = useState(800);
 
     //Use Effect to get all the free courses from courses
     useEffect(()=>{
