@@ -1,15 +1,17 @@
 import computerimg from '../../../Assets/Home/homePagecomputerImg.png'
-import Button from '@mui/material/Button';
+import {Button} from '@mui/material';
 
 export const Part1 = ()=>{
     return(
         <div>
             <h1>Learn something new. Everyday. </h1>
             <p>Educative helps software engineers and their teams increase productivity and reach their potential</p>
-            <Button variant="contained">I'm an individual</Button>
-            <Button variant="contained">I'm a business</Button>
+            
+            <Button variant="contained" sx={{margin:"20px"}}>I'm an individual</Button>
+            <Button variant="contained" sx={{margin:"20px"}} >I'm a business</Button>
+            
             <br />
-            <img src={computerimg} alt="" />
+            <img className='computerimg' src={computerimg} alt="" />
             
             <br />
             <div className='iconsSvgDiv'>

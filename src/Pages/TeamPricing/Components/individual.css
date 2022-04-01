@@ -1,0 +1,250 @@
+#navbar{
+    width:100%;
+    height:65px;
+}
+#nav1{
+    width:20%;
+    height:100%;
+}
+#box{
+    width:60%;
+    height:300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Nunito Sans';
+
+}
+#text{
+    font-size: 42px;
+    font-weight:530;
+}
+#box2{
+    width: 100%;
+    height:30%;
+    text-align: center;
+    font-size: 21px;
+
+}
+#check{
+    color:#23527c
+}
+#price{
+    width:85%;
+    height:980px;
+    margin: auto;
+    margin-top: 2%;
+    display:flex;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+#price>div{
+    width:33%;
+    height:100%;
+    
+}
+.price1{
+    width:100%;
+    height:150px;
+}
+.price2{
+    width:100%;
+    height:280px;
+}
+#logos{
+    width:85%;
+    height:190px;
+    margin: auto;
+}
+.top{
+    margin-left: 5%;
+    font-weight: 450;
+}
+.shift{
+    margin-left: 5%;
+    font-weight: 450;
+
+}
+.top1{
+    margin-left: 5%;
+    font-weight: 50;
+    margin-top: -4%;
+    
+
+}
+.top2{
+    margin-left: 5%;
+    font-weight: 50;
+    margin-top: -4%;
+    color:grey
+
+}
+.mid{
+    margin-left: 5%;
+
+}
+.dollar{
+    margin-left: 5%;
+    font-weight:100;
+    margin-top: 13%;
+    font-size: 17px;
+    text-decoration: line-through;
+
+}
+.real{
+    margin-left: 5%;
+    margin-top: -7%;
+    font-size: 39px;
+    font-weight:540;
+    color:blue
+
+
+}
+.real1{
+    margin-left: 5%;
+    margin-top: 18%;
+    font-size: 39px;
+    font-weight:540;
+    color:blue
+
+
+}
+.img_size{
+    width: 30px;
+    height:13px;
+    margin-top: 3%;
+    font-weight:40;
+    
+}
+.butt{
+    margin-left: 22px;
+    border:1px black;
+}
+.butt1{
+    margin-left: 22px;
+    border:1px black;
+    margin-top:30%;
+
+}
+.butt4{
+    margin-left: 22px;
+    border:1px black;
+    margin-top:3%;
+
+}
+.buy{
+    padding: 15px 120px;
+    font-size: 15px;
+    
+}
+.buy1{
+    padding: 15px 120px;
+    font-size: 15px;
+    background-color: #5651f6;
+    color:white
+    
+}
+.buy:hover{
+    background-color:whitesmoke;
+    
+
+}
+.top3{
+    margin-left: 5%;
+    font-weight: 450;
+    font-size: 18px ;
+}
+.top4{
+    margin-left: 13%;
+    font-weight: 450;
+    margin-top: 23px;
+
+}
+.change{
+    margin-top: 27px;
+    /* border: 2px solid red; */
+    
+    
+}
+.new{
+    text-align: center;
+    margin-top: 30px;
+}
+#logo{
+    width: 100%;
+}
+#faq{
+    width:100%;
+    height:800px;
+    /* border: 3px solid red; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#demo{
+    width:70%;
+    display: flex;
+    height: 350px;
+    /* border: 2px solid red; */
+    margin:auto;
+    margin-top:30px;
+}
+#demo1{
+    width:40%;
+    height:100%;
+    /* border: 2px solid red; */
+}
+#demo2{
+    width:70%;
+    height:100%;
+    /* border: 2px solid red; */
+}
+#test{
+    margin-left: 30px;
+    font-size: 20px;
+
+}
+#butt2{
+    margin-left: 30px;
+    background-color: #5651f6;
+    color: white;
+    padding:12px 20px;
+    border: none;
+}
+#head{
+    margin-left: 10%;
+    margin-top: 6%;
+    font-size: 40px;
+    font-weight: 600;
+}
+.para{
+    margin-left: 10%;
+    font-size: 20px;
+}
+.hr1{
+    width:80%;
+    margin-top: 2%;
+}
+.para1{
+    margin-left: 10%;
+    font-size: 17px;
+}
+#ask{
+    color:#5651f6;
+    margin-left: 5%;
+    margin-top: 13%;
+    font-size: 26px;
+    font-weight: 550;
+}
+#line{
+    width:100%;
+    height:6px;
+    background-color: #62ddc3;
+}
+#line1{
+    width:100%;
+    height:6px;
+    background-color: #5651f6;
+}
+#line2{
+    width:100%;
+    height:6px;
+    background-color: #d43554
+}
