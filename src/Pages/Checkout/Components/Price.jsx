@@ -32,14 +32,14 @@ export const Price = ({course})=>{
             <h4>Choose a Plan</h4>
             <div className="priceContainer">
                 {selectedPlan===1?<div className="eachPriceSelected">
-                    <div>16% Discount</div>
-                    <div>
+                    <div className="eachpricetitleDiv">16% Discount</div>
+                    <div className="eachPriceInfoDiv">
                         <p><b>2-Year Plan</b></p>
                         <p>${twoYearPrice.current} / month</p>
                     </div>
                 </div>:<div onClick={()=>(handleDivClick(1))} className="eachPrice">
-                    <div>16% Discount</div>
-                    <div>
+                    <div className="eachpricetitleDiv">16% Discount</div>
+                    <div className="eachPriceInfoDiv">
                         <p><b>2-Year Plan</b></p>
                         <p>${twoYearPrice.current} / month</p>
                     </div>
@@ -47,14 +47,14 @@ export const Price = ({course})=>{
 
 
                 {selectedPlan===2?<div className="eachPriceSelected">
-                    <div>Most Popular</div>
-                    <div>
+                    <div className="eachpricetitleDiv2">Most Popular</div>
+                    <div className="eachPriceInfoDiv">
                         <p><b>Annual Plan</b></p>
                         <p>${annualPrice.current} / month</p>
                     </div>
                 </div>:<div onClick={()=>(handleDivClick(2))} className="eachPrice">
-                    <div>Most Popular</div>
-                    <div>
+                    <div className="eachpricetitleDiv2">Most Popular</div>
+                    <div className="eachPriceInfoDiv">
                         <p><b>Annual Plan</b></p>
                         <p>${annualPrice.current} / month</p>
                     </div>
@@ -62,12 +62,12 @@ export const Price = ({course})=>{
 
 
                 {selectedPlan===3?<div className={"eachPriceSelected"}>
-                    <div>
+                    <div className="eachPriceInfoDiv">
                         <p><b>Monthly Plan</b></p>
                         <p>${monthlyPrice.current} / month</p>
                     </div>
                 </div>:<div onClick={()=>(handleDivClick(3))} className="eachPrice">
-                    <div>
+                    <div className="eachPriceInfoDiv">
                         <p><b>Monthly Plan</b></p>
                         <p>${monthlyPrice.current} / month</p>
                     </div>
