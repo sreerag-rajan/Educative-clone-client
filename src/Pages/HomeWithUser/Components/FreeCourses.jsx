@@ -45,7 +45,6 @@ export const FreeCourses = (courses)=>{
         let x = course.courseName.split(" ").join("-");
         localStorage.setItem("educativeCourse", JSON.stringify(course))
         navigate(`/course/${x}`);
-
     }
     
 

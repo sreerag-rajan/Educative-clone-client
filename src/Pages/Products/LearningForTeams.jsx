@@ -7,7 +7,7 @@ import image2 from "../../Assets/Products/image2.PNG";
 import image3 from "../../Assets/Products/image3.PNG";
 import image4 from "../../Assets/Products/image4.PNG";
 import image5 from "../../Assets/Products/image5.PNG";
-import "./LearningForTeams.css";
+import "./LearningForTeams components/LearningForTeams.css";
 
 export const LearningForTeams = ()=>{
 
@@ -23,11 +23,11 @@ export const LearningForTeams = ()=>{
            </div>
             <div className="card-background">
                 <p className="how-we">How we help</p>
-            <div className="Card">
-                <Card1 />
-                <Card2 />
-                <Card3 />
-            </div>
+                <div className="Card">
+                    <Card1 />
+                    <Card2 />
+                    <Card3 />
+                </div>
             </div>
 
             <div className="flexdiv">

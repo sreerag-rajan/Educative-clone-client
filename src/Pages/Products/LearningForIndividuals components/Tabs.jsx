@@ -4,7 +4,6 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import "./Tabs.css"
 import LanguageIcon from '@mui/icons-material/Language';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import { BsStars} from 'react-icons/bs';
@@ -16,7 +15,8 @@ import { New } from "./components of explore/new";
 import { EarlyAccess } from "./components of explore/earlyAccess";
 import { Free } from "./components of explore/free";
 import { useState, useEffect } from "react";
-import Button from "@mui/material/Button"
+import Button from "@mui/material/Button";
+import "./Tabs.css"
 
 
 function TabPanel(props) {
@@ -90,14 +90,14 @@ export default function BasicTabs() {
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 3, borderColor: 'divider' }}>
-      <div className="tabs">
-        <Tabs className="tab-bottom" value={value} onChange={handleChange} aria-label="basic tabs example">
-            <Tab label={browser(<LanguageIcon style={{ fontSize: 30 }} />,"Browse All")} {...a11yProps(0)} sx={{ width:"20%",fontWeight: "bold" }} />
-            <Tab label={browser(<StarBorderIcon style={{ fontSize: 30 }}/>,"Our Picks")} {...a11yProps(1)} style={{ width:"20%" }} />
-            <Tab label={browser(<BsStars style={{ fontSize: 30 }} />,"New")} {...a11yProps(2)} style={{ width:"20%" }} />
-            <Tab label={browser(<ImFlag style={{ fontSize: 30 }} />,"Early Access")} {...a11yProps(3)} style={{ width:"20%" }} />
-            <Tab label={browser(<DeveloperBoardOffIcon style={{ fontSize: 30 }} />,"Free")} {...a11yProps(4)} style={{ width:"20%" }} />
-        </Tabs>
+        <div className="tabs">
+          <Tabs className="tab-bottom" value={value} onChange={handleChange} aria-label="basic tabs example">
+              <Tab label={browser(<LanguageIcon style={{ fontSize: 30 }} />,"Browse All")} {...a11yProps(0)} sx={{ width:"20%",fontWeight: "bold",minWidth:"140px" }} />
+              <Tab label={browser(<StarBorderIcon style={{ fontSize: 30 }}/>,"Our Picks")} {...a11yProps(1)} sx={{ width:"20%",minWidth:"140px" }} />
+              <Tab label={browser(<BsStars style={{ fontSize: 30 }} />,"New")} {...a11yProps(2)} sx={{ width:"20%",minWidth:"140px" }} />
+              <Tab label={browser(<ImFlag style={{ fontSize: 30 }} />,"Early Access")} {...a11yProps(3)} sx={{ width:"20%",minWidth:"140px" }} />
+              <Tab label={browser(<DeveloperBoardOffIcon style={{ fontSize: 30 }} />,"Free")} {...a11yProps(4)} sx={{ width:"20%",minWidth:"140px" }} />
+          </Tabs>
         </div>
       </Box>
       <div className="tab-content">

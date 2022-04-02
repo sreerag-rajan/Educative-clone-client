@@ -22,3 +22,30 @@
 .searchbar>:nth-child(2)>i{
     font-size:18px
 }
+@media (min-width: 375px) and (max-width: 768px){
+    .searchbar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .searchbar>:nth-child(2){
+        margin: auto;
+        margin-top:5%;
+        width: 50%;
+        height: 35%;
+    }
+}
+@media (min-width: 0px) and (max-width: 375px){
+    .searchbar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .searchbar>:nth-child(2){
+        margin: auto;
+        margin-top:5%;
+        width: 80%;
+        height: 35%;
+    }
+
+}
