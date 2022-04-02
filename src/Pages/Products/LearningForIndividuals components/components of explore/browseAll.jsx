@@ -25,7 +25,13 @@ export const BrowseAll = ({course}) => {
 
 
 const sorting = (e) => {
-  setCoursesToShow(course)
+  let index_limit = page*6;
+    let x = freeCourses.filter((el,i)=>{
+        if(i<index_limit){
+          return el;
+        }
+    })
+    setCoursesToShow(x);
   if(e !== "All"){
     let s = course.filter((el) => {
       if(el.subject === e){

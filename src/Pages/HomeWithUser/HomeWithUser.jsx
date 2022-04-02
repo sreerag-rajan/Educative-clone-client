@@ -21,7 +21,7 @@ export const HomeWithUser = ()=>{
     },[])
 
     useEffect(()=>{
-        axios.get("http://localhost:2345/homecourses").then(({data})=>{
+        axios.get("https://educative-clone-server.herokuapp.com/homecourses").then(({data})=>{
             setCourses(data);
         })
     },[])

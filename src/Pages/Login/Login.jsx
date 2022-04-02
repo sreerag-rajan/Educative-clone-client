@@ -20,7 +20,7 @@ export const Login =( ) =>{
         })
     }
     const login  =() =>{
-        axios.post("http://localhost:2345/login",user)
+        axios.post("https://educative-clone-server.herokuapp.com/login",user)
         .then(res=>{alert(res.data.message)
             if(res.data.message==="Login Successfull"){
                 console.log("user",res.data.user)
