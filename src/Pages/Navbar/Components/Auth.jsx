@@ -12,20 +12,28 @@ import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 
-import {useState, useEffect, Fragment } from "react";
-import { useSelector } from "react-redux"
+import {useState, useEffect, Fragment, useRef } from "react";
+import { useDispatch, useSelector } from "react-redux"
 
 
 import avatar from "../../../Assets/Navbar/Auth/avatar.png"
+import { useNavigate } from "react-router-dom";
+import { loginUser } from "../../../Redux/Auth/auth.action";
 
 
 export const Auth = ()=>{
-    // const user = useSelector((store)=>store.auth.user);
-    const user = false;
+  const navigate = useNavigate()
+    const user = useSelector((store)=>store.auth.user);
+    const dispatch = useDispatch()
 
     useEffect(()=>{
-        // Check local storage and update user
+        let x = JSON.parse(localStorage.getItem("educativeUser"))
+        dispatch(loginUser(x));
     },[])
+
+    const handleNavigate = (route)=>{
+      navigate(route)
+    }
     
     return(
         <>
@@ -34,8 +42,8 @@ export const Auth = ()=>{
             <UserAvatar/>
         </div>:
         <div className="noUser">
-            <Button sx={{color:"black", fontWeight:"bold"}}>Login</Button>
-            <Button  variant="contained">Join For Free</Button>            
+            <Button onClick={()=>{handleNavigate("/login")}} sx={{color:"black", fontWeight:"bold"}}>Login</Button>
+            <Button onClick={()=>{handleNavigate("/register")}}  variant="contained">Join For Free</Button>            
         </div>}
         </>
     )
@@ -46,6 +54,7 @@ export const Auth = ()=>{
 const UserAvatar = ()=>{
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
+  const dispatch = useDispatch()
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -117,7 +126,10 @@ const UserAvatar = ()=>{
           </ListItemIcon>
           Settings
         </MenuItem>
-        <MenuItem>
+        <MenuItem onClick={()=>{
+          localStorage.removeItem("educativeUser");
+          dispatch(loginUser(null));
+        }}>
           <ListItemIcon>
             <Logout fontSize="small" />
           </ListItemIcon>
