@@ -1,9 +1,11 @@
 .welcome{
     text-align: center;
 }
+
 .freeCourses{
     margin: 20px;
 }
+
 .freeCourseContainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -14,6 +16,7 @@
     margin-bottom: 30px;
     border: 1px solid transparent;
 }
+
 .freeCourseCard{
     text-align: left;
 }

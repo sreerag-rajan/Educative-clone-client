@@ -117,6 +117,7 @@ export const DevelopmentsTeam = () => {
           </div>
         </div>
       </ThirdBox>
+      
       <ForthBox>
         <br />
         <br />
