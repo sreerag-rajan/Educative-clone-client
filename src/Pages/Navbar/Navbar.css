@@ -25,6 +25,9 @@
     display: flex;
     gap: 20px;
 }
+.temporaryDrawer{
+    display: none;
+}
 .noUser{
     display: flex;
     gap: 20px;
@@ -37,4 +40,29 @@
 .navSectionIcon{
     width: 20px;
     margin:  0 10px 0 5px;
+}
+
+@media screen  and (max-width:480px){
+    .logo{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        margin: 0 5px;
+    }
+    .sections{
+        display: none;
+    }
+    .temporaryDrawer{
+        display: flex;
+    }
+    .noUser{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        margin: 5px;
+    }
+    .user{
+        margin: 8px;
+    }
+    
 }

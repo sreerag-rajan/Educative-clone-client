@@ -35,7 +35,7 @@ export const Auth = ()=>{
         </div>:
         <div className="noUser">
             <Button sx={{color:"black", fontWeight:"bold"}}>Login</Button>
-            <Button variant="contained">Join For Free</Button>            
+            <Button  variant="contained">Join For Free</Button>            
         </div>}
         </>
     )
