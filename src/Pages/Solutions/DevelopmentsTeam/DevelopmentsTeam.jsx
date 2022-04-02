@@ -58,6 +58,8 @@ export const DevelopmentsTeam = () => {
           <div className="right">
             <div className="container">
               <div id="head">
+      
+
               </div>
               <div id="sub-head">
                 <p
@@ -115,13 +117,14 @@ export const DevelopmentsTeam = () => {
           </div>
         </div>
       </ThirdBox>
+      
       <ForthBox>
         <br />
         <br />
         <br />
-        <h1 style={{ textAlign: "center", fontSize: "38px" }}>
+        {/* <h1 style={{ textAlign: "center", fontSize: "38px" }}>
           What other learners are saying
-        </h1>
+        </h1> */}
         <br />
         <div className="box3">
                 <Part4/>

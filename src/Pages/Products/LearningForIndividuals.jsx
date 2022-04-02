@@ -26,6 +26,8 @@ export const LearningForIndividuals = () => {
 
             {/* tabs */}
             <Tab />
+            
+            
         </div>
     )
 }

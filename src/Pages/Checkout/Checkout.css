@@ -9,6 +9,14 @@
 .checkoutRight{
     background-color: ghostwhite;
 }
+
+.CheckoutText{
+    text-align: center;
+}
+
+.CheckoutText>div{
+    margin: 30px 18px;
+}
 .priceComponent{
     margin-top: 50px;
 }
@@ -21,16 +29,50 @@
     justify-content: center;
     margin: 5%;
 }
-
-.eachPrice{
-    border: 1px solid black;
-    padding: 20px;
+.eachpricetitleDiv{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(198, 197, 197);
+    padding: 0;
+    margin: auto;
+    letter-spacing: 2px;
+    font-weight: bold;
     box-sizing: border-box;
 }
-.eachPriceSelected{
-    border: 3px solid purple;
-    padding: 20px;
+.eachpricetitleDiv2{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(198, 197, 197);
+    padding: 0;
+    margin: auto;
+    background-color: #caf5ed;
+    color:green;
+    letter-spacing: 2px;
+    font-weight: bold;
     box-sizing: border-box;
+}
+
+.eachPrice{
+    border: 1px solid rgb(198, 197, 197);
+    /* padding: 20px; */
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.eachPriceSelected{
+    border: 5px solid #5553ff;
+    border-radius: 2px;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+.eachPriceInfoDiv{
+    padding: 10px 40px;
 }
 .totalPrice{
     display: flex;
