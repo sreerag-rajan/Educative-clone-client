@@ -1,0 +1,51 @@
+
+.course{
+    display: grid;
+    grid-template-columns: 75% 20%;
+    grid-gap: 5%;
+    width: 95%;
+    margin: auto;
+}
+.quickNumbers{
+    display: flex;
+    gap: 20px;
+}
+.quickNumbers>div{
+    background-color: rgb(231, 230, 230);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+.someDetails{
+    display: flex;
+    gap: 20px;
+}
+.sd{
+    margin: 0 5px;
+}
+.hylgrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.hylicons{
+    margin: 0 5px;
+}
+.price{
+    border: 1px solid rgb(194, 191, 191);
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.price img{
+    width: 100%;
+}
+.trainYourTeam{
+    display: flex;
+    justify-content: center;
+}

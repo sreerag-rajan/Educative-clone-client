@@ -1,0 +1,29 @@
+.tabs{
+    width: 70%;
+    margin: auto;
+    text-align:left;
+}
+.tab-content{
+    margin-top: 25px;
+}
+.tab-content>div{
+    width: 70%;
+    margin: auto;
+}
+.icon-text{
+    display:flex;
+    font-weight: 700;
+    color: black;
+    font-size:18px;
+}
+.icon-text>:nth-child(2){
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+
+.btns:hover{
+    cursor: pointer;
+    border: 1px solid;
+}
+

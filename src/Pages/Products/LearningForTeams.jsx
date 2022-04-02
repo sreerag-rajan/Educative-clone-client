@@ -1,22 +1,22 @@
 import Button from '@mui/material/Button';
 import image1 from "../../Assets/Products/teamImage1.png";
-import "./LearningForTeams.css";
-import Card1 from "./LearnForTeams components/Card1"
-import Card2 from "./LearnForTeams components/Card2"
-import Card3 from "./LearnForTeams components/Card3"
+import Card1 from "./LearningForTeams components/Card1";
+import Card2 from "./LearningForTeams components/Card2";
+import Card3 from "./LearningForTeams components/Card3";
 import image2 from "../../Assets/Products/image2.PNG";
 import image3 from "../../Assets/Products/image3.PNG";
 import image4 from "../../Assets/Products/image4.PNG";
 import image5 from "../../Assets/Products/image5.PNG";
+import "./LearningForTeams.css";
 
 export const LearningForTeams = ()=>{
 
     return (
-        <div>
+        <div className="learningforteams">
             <p className="upskill-your-team">Upskill Your Team. <br />
                 Improve Their Code and Career.</p>
             <p className='educative-helps'>Educative helps engineering managers and their teams learn, practice,<br />
-and test their coding skills using hands-on, interactive tools right from their internet browser.</p>
+            and test their coding skills using hands-on, interactive tools right from their internet browser.</p>
             <div><Button className="demo-btn" variant="contained"><p>Request a Demo</p></Button></div>
            <div className="Image1">
            <img className="copyImage1" src={image1} alt="" />
@@ -33,8 +33,8 @@ and test their coding skills using hands-on, interactive tools right from their 
             <div className="flexdiv">
                 <div className="firstflex">
                     <div>
-                        <p className="heading1" >Custom Learning Paths</p>
-                        <p className="para1">No two engineers are exactly the same, so why is their <br/>
+                        <p className="heading12" >Custom Learning Paths</p>
+                        <p className="para12">No two engineers are exactly the same, so why is their <br/>
                         curriculum? Educative helps you customize their training and <br/>
                         paths so each engineer on your team gets exactly what they <br/>
                         need and skip what they've already mastered. <br/>
@@ -49,8 +49,8 @@ and test their coding skills using hands-on, interactive tools right from their 
                         <img src={image3} alt="" width="100%" height="100%" />
                     </div>
                     <div>
-                        <p className="heading1" >Custom Learning Paths</p>
-                        <p className="para1">No two engineers are exactly the same, so why is their <br/>
+                        <p className="heading12" >Custom Learning Paths</p>
+                        <p className="para12">No two engineers are exactly the same, so why is their <br/>
                         curriculum? Educative helps you customize their training and <br/>
                         paths so each engineer on your team gets exactly what they <br/>
                         need and skip what they've already mastered. <br/>
@@ -60,8 +60,8 @@ and test their coding skills using hands-on, interactive tools right from their 
                 </div>
                 <div className="firstflex">
                     <div>
-                        <p className="heading1" >Custom Learning Paths</p>
-                        <p className="para1">No two engineers are exactly the same, so why is their <br/>
+                        <p className="heading12" >Custom Learning Paths</p>
+                        <p className="para12">No two engineers are exactly the same, so why is their <br/>
                         curriculum? Educative helps you customize their training and <br/>
                         paths so each engineer on your team gets exactly what they <br/>
                         need and skip what they've already mastered. <br/>
