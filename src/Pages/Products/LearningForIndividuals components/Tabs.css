@@ -20,25 +20,10 @@
     padding-top: 3px;
     padding-left: 5px;
 }
-.buttons{
-    text-align: left;
-}
-.btns{
-    width: 130px;
-    height: 45px;
-    border-radius:25px;
-    border: 1px solid rgb(199, 192, 192);
-    font-size:18px;
-    margin-right: 12px;
-    margin-bottom: 40px;
-}
+
+
 .btns:hover{
     cursor: pointer;
     border: 1px solid;
 }
-.grid-container{
-    border: 1px solid;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
+

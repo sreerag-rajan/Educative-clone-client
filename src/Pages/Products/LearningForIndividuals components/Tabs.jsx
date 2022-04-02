@@ -12,19 +12,15 @@ import { ImFlag} from 'react-icons/im';
 import DeveloperBoardOffIcon from '@mui/icons-material/DeveloperBoardOff';
 import { BrowseAll } from "./components of explore/browseAll";
 import { OurPicks } from "./components of explore/ourPicks";
+import { New } from "./components of explore/new";
+import { EarlyAccess } from "./components of explore/earlyAccess";
+import { Free } from "./components of explore/free";
 import { useState, useEffect } from "react";
-
-
-
-
-
-
+import Button from "@mui/material/Button"
 
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-
-    
 
   return (
     <div
@@ -58,6 +54,7 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
+  
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -78,7 +75,6 @@ export default function BasicTabs() {
 
     useEffect(() => {
       Data()
-      console.log(course)
       return
     },[])
 
@@ -105,35 +101,28 @@ export default function BasicTabs() {
         </div>
       </Box>
       <div className="tab-content">
-        <TabPanel className="buttons" value={value} index={0}>
-          <button className="btns">Python</button>
-          <button className="btns">Go</button>
-          <button className="btns">JavaScript</button>
-          <button className="btns">Rust</button>
-          <button className="btns">C++</button>
-          <button className="btns">TypeScript</button>
-          <button className="btns">React</button>
-          {/* <hr/> */}
-          <br />
-          <br />
-          {/* <ImgMediaCard /> */}
-          <div className="grid-container">
-            {course && <BrowseAll course={course} />}
-          </div>
+        <TabPanel value={value} index={0}>
+          {course && <BrowseAll course={course} />}
         </TabPanel>
         <TabPanel value={value} index={1}>
           <div className="grid-container">
-            {course && <BrowseAll course={course} />}
+            {course && <OurPicks course={course} />}
           </div>
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Item Three
+        <div className="grid-container">
+            {course && <New course={course} />}
+          </div>
         </TabPanel>
         <TabPanel value={value} index={3}>
-          Item four
+        <div className="grid-container">
+            {course && <EarlyAccess course={course} />}
+          </div>
         </TabPanel>
         <TabPanel value={value} index={4}>
-          Item five
+        <div className="grid-container">
+            {course && <Free course={course} />}
+          </div>
         </TabPanel>
       </div>
     </Box>

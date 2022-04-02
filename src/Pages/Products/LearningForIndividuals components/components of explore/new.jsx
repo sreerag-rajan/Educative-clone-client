@@ -1,14 +1,14 @@
 import { ImgMediaCard } from "../blueprintOfCard";
 import { useEffect, useState } from "react";
 
-export const OurPicks = ({course}) => {
+export const New = ({course}) => {
 
   const [freeCourses, setFreeCourses] = useState([]);
     
   useEffect(() => {
     let arr = [...course,course]
     let x = arr.filter((el) => {
-      if(el.coursetype === "Our Picks"){
+      if(el.coursetype === "New"){
         return el;
       }
     })
