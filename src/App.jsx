@@ -6,9 +6,9 @@ import { Footer } from './Pages/Footer/Footer';
 function App() {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
       <AllRoutes/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

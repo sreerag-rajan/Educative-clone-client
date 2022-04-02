@@ -10,7 +10,7 @@ import "./card.css";
 
 export default function ActionAreaCard() {
   return (
-    <Card sx={{ maxWidth: 600 }}>
+    <Card sx={{ maxWidth: 600,minWidth: 400 }}>
       <CardActionArea>
         <CardMedia
           component="img"

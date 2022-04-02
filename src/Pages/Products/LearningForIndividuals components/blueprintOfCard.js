@@ -7,12 +7,20 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import "./blueprintOfCard.css"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 export function ImgMediaCard({imageUrl,courseBy,courseName,level,e}) {
-  console.log(e)
+
+  const navigate = useNavigate()
+
+  const handleNavigate = (course) =>{
+    let x = course.courseName.split(" ").join("-");
+    localStorage.setItem("educativeCourse", JSON.stringify(course))
+    navigate(`/course/${x}`);
+}
   return (
-    <Card sx={{ maxWidth: 370 }}>
+    <Card sx={{ minWidth: 250, maxWidth: 370 }}>
       <CardMedia
         component="img"
         alt="green iguana"
@@ -29,7 +37,7 @@ export function ImgMediaCard({imageUrl,courseBy,courseName,level,e}) {
       </CardContent>
       <CardActions className="card-btm">
         <h5>{level}</h5>
-        <Button sx={{ width:"35%", height:"50px",color:"black" }} variant="outlined" endIcon={<ArrowForwardIcon />} onclick={() => {}}>Preview</Button>
+        <Button sx={{ width:"35%", height:"50px",color:"black" }} variant="outlined" endIcon={<ArrowForwardIcon />} onClick={() => handleNavigate(e)}>Preview</Button>
       </CardActions>
     </Card>
   );

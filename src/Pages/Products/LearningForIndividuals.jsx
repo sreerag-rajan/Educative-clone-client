@@ -19,7 +19,7 @@ export const LearningForIndividuals = () => {
                 {/* search bar */}
                 <div className="searchbar">
                     <div><TextField fullWidth label="Search Courses" id="fullWidth" /></div>
-                    <div><Button variant="contained" startIcon={<SearchOutlinedIcon style={{ fontSize: 30 }} />}>Search</Button></div>
+                    <div><Button id="searchButton12" variant="contained" startIcon={<SearchOutlinedIcon style={{ fontSize: 30 }} />}>Search</Button></div>
                 </div>
       
             </div>
