@@ -121,9 +121,9 @@ export const DevelopmentsTeam = () => {
         <br />
         <br />
         <br />
-        <h1 style={{ textAlign: "center", fontSize: "38px" }}>
+        {/* <h1 style={{ textAlign: "center", fontSize: "38px" }}>
           What other learners are saying
-        </h1>
+        </h1> */}
         <br />
         <div className="box3">
                 <Part4/>
