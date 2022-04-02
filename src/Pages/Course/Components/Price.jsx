@@ -19,8 +19,9 @@ export const Price = ({course})=>{
                 <img src={course.imageUrl} alt="poster" />
             </div>
             <h3>Annual Plan</h3>
+            <p >{course.level}</p>
             <div>
-                <p>${price.current}</p>
+                <p> <b> ${price.current} / month </b></p>
 
             </div>
             <Button onClick={handleClick} variant="contained">Start Learning</Button>
