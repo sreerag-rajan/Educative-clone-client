@@ -1,6 +1,11 @@
 .home{
     text-align: center;
 }
+.homepart1>p{
+    font-size: 25px;
+    width: 50%;
+    margin: auto;
+}
 *{
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -17,6 +22,12 @@
 }
 .computerimg{
     width: 60%;
+}
+.part2>p{
+    font-size: 22px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
 }
 .part2>iframe{
     width:90%;
@@ -111,6 +122,11 @@
         margin: auto;
         margin-top: 20px;
     }
+    .homepart1>p{
+        font-size: 18px;
+        width: 90%;
+        margin: auto;
+    }
     .part2>iframe{
         width:100%;
         height:200px;
@@ -119,6 +135,12 @@
         width: 100%;
         margin: auto;
         margin-top: 30px;
+    }
+    .part2>p{
+        font-size: 18px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 15px;
     }
 
     .part3grid img{
