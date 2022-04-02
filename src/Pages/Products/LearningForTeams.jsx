@@ -49,7 +49,7 @@ export const LearningForTeams = ()=>{
                         <img src={image3} alt="" width="100%" height="100%" />
                     </div>
                     <div>
-                        <p className="heading12" >Custom Learning Paths</p>
+                        <p className="heading12" >Active Participation</p>
                         <p className="para12">No two engineers are exactly the same, so why is their <br/>
                         curriculum? Educative helps you customize their training and <br/>
                         paths so each engineer on your team gets exactly what they <br/>
@@ -60,7 +60,7 @@ export const LearningForTeams = ()=>{
                 </div>
                 <div className="firstflex">
                     <div>
-                        <p className="heading12" >Custom Learning Paths</p>
+                        <p className="heading12" >Engagement Tracking</p>
                         <p className="para12">No two engineers are exactly the same, so why is their <br/>
                         curriculum? Educative helps you customize their training and <br/>
                         paths so each engineer on your team gets exactly what they <br/>

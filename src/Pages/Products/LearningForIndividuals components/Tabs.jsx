@@ -64,7 +64,7 @@ export default function BasicTabs() {
 
     const Data = async () => {
       try{
-        var res = await fetch("http://localhost:2345/explores");
+        var res = await fetch("https://educative-clone-server.herokuapp.com/explores");
         var data = await res.json();
         setCourse(data);
       }

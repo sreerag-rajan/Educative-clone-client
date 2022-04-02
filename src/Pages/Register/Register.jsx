@@ -34,7 +34,7 @@ export const Register =( ) =>{
         
         if(name && email  && password ){
            
-            axios.post("http://localhost:2345/register",user).then(res=>{alert(res.data.message)
+            axios.post("https://educative-clone-server.herokuapp.com/register",user).then(res=>{alert(res.data.message)
          navigate("/login")
         
         })
