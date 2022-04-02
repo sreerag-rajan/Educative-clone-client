@@ -7,8 +7,10 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import "./blueprintOfCard.css"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Link } from "react-router-dom";
 
-export function ImgMediaCard({imageUrl,courseBy,courseName,level}) {
+export function ImgMediaCard({imageUrl,courseBy,courseName,level,e}) {
+  console.log(e)
   return (
     <Card sx={{ maxWidth: 370 }}>
       <CardMedia
@@ -27,7 +29,7 @@ export function ImgMediaCard({imageUrl,courseBy,courseName,level}) {
       </CardContent>
       <CardActions className="card-btm">
         <h5>{level}</h5>
-        <Button sx={{ width:"35%", height:"50px",color:"black" }} variant="outlined" endIcon={<ArrowForwardIcon />}>Preview</Button>
+        <Button sx={{ width:"35%", height:"50px",color:"black" }} variant="outlined" endIcon={<ArrowForwardIcon />} onclick={() => {}}>Preview</Button>
       </CardActions>
     </Card>
   );

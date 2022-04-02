@@ -1,0 +1,41 @@
+.showmore{
+    border: solid;
+    width: 300px;
+    height: 50px;
+    
+    margin-top:50px;
+}
+.showmore>:nth-child(1){
+    border: solid;
+    width: 100%;
+    height: 100%;
+}
+.btns{
+    width: 140px;
+    height: 45px;
+    border-radius:25px;
+    border: 1px solid rgb(199, 192, 192);
+    font-size:18px;
+    margin-right: 12px;
+    margin-bottom: 40px;
+}
+.buttons{
+    text-align: left;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.showmore{
+    border: solid;
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    margin-top: 50px;
+}
+.showmore>:nth-child(1){
+    border: solid;
+    width: 100%;
+    height: 100%;
+}
