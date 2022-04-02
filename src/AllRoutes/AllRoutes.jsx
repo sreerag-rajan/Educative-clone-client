@@ -5,15 +5,13 @@ import { Home } from "../Pages/Home/Home"
 import { HomeWithUser } from "../Pages/HomeWithUser/HomeWithUser"
 import { LearningForTeams } from "../Pages/Products/LearningForTeams"
 import {DevelopmentsTeam} from "../Pages/Solutions/DevelopmentsTeam/DevelopmentsTeam"
-
 import {Developers} from "../Pages/Solutions/Developers/Developers"
-
 import {TeamPricing} from "../Pages/TeamPricing/Components/team"
-
 import {IndividualPricing} from "../Pages/IndividualPricing/individuals"
 import { Course } from "../Pages/Course/Course"
 import { Checkout } from "../Pages/Checkout/Checkout"
-
+import {Login} from "../Pages/Login/Login"
+import {Register} from "../Pages/Register/Register"
 
 export const AllRoutes = ()=>{
     return(
@@ -27,9 +25,9 @@ export const AllRoutes = ()=>{
             <Route path="/learn" element={<HomeWithUser/>}/>
             <Route path="/upskill" element={<LearningForTeams/>}/>
             <Route path="/business" element={<DevelopmentsTeam/>}/>
-
+            <Route path='/login'element={<Login/>}></Route>
+            <Route path='/register'element={<Register/>}></Route>
             <Route path="/individual-learner" element={<Developers/>}/>
-
             <Route path="/course/:name" element={<Course/>}/>
             <Route path = "/payment" element={<Checkout/>}/>
 
