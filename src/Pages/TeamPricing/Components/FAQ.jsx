@@ -16,7 +16,7 @@ export const FAQ = ()=>{
             <hr class = "hr1"/>
             <p class = "para1">Reach out to us and we'll tailor your price to match the size of your organization and your learning goals.</p>
             <hr class = "hr1"/>
-            <p class = "para"> <p class = "para">How can I learn more about the pricing levels for the Enterprise options?</p></p>
+            <p class = "para1"> How can I learn more about the pricing levels for the Enterprise options?</p>
             <hr class = "hr1"/>
             <p class = "para1">You can either add them to your admin dashboard or talk to us at enterprise@educative.io.</p>
     </div>
