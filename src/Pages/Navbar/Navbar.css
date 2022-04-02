@@ -1,0 +1,40 @@
+.navbar{
+    display: flex;
+    height: 60px;
+    border: 1px solid #c4c5ca;
+    align-items: center;
+    justify-content: space-between;
+    /* position: sticky;
+    top:0px; */
+    background-color: white;
+}
+.navbar>div:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0 20px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.sections{
+    display: flex;
+    gap: 20px;
+}
+.noUser{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 20px;
+}
+.user{
+    margin: 20px;
+}
+.navSectionIcon{
+    width: 20px;
+    margin:  0 10px 0 5px;
+}
