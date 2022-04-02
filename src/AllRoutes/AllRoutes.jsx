@@ -12,6 +12,7 @@ import { Course } from "../Pages/Course/Course"
 import { Checkout } from "../Pages/Checkout/Checkout"
 import {Login} from "../Pages/Login/Login"
 import {Register} from "../Pages/Register/Register"
+import { Onboard } from "../Pages/Onboarding/Components/Onboard"
 
 export const AllRoutes = ()=>{
     return(
@@ -27,6 +28,7 @@ export const AllRoutes = ()=>{
             <Route path="/business" element={<DevelopmentsTeam/>}/>
             <Route path='/login'element={<Login/>}></Route>
             <Route path='/register'element={<Register/>}></Route>
+            <Route path="/onboarding" element={<Onboard/>}/>
             <Route path="/individual-learner" element={<Developers/>}/>
             <Route path="/course/:name" element={<Course/>}/>
             <Route path = "/payment" element={<Checkout/>}/>
