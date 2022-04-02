@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 export const Part1 = ()=>{
     const navigate = useNavigate()
     return(
-        <div>
+        <div className='homepart1'>
             <h1>Learn something new. Everyday. </h1>
             <p>Educative helps software engineers and their teams increase productivity and reach their potential</p>
             
