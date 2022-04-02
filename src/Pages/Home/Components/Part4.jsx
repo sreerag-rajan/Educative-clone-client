@@ -74,8 +74,6 @@ export const Part4 = ()=>{
                     </Slide>
                 </div>
 
-                {/* <button>&#62;</button> */}
-
             </div>
         </div>
     )
